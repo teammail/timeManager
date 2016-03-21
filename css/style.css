@@ -1,0 +1,61 @@
+html body {
+	font-family: Arsenal, Arial;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin:0;
+	padding: 0;
+}
+
+section {
+	display: table;
+	width: 100%;
+	min-height: 100vh;
+}
+
+/*Блок стилей для панели создания задач*/
+#create_menu {
+	display: table-cell;
+	background-color: #CCCCFF;
+	color: #000033;
+	width: 200px;
+}
+/*Блок стилей для основной панели*/
+#main {
+	display: table-cell;
+	background-color: white;
+	width: 600px;
+	border-left: 2px dotted #000033;
+	border-right: 2px dotted #000033;
+}
+#interval_of_time {
+	width: 600px;
+	margin: 0px;
+	padding: 0px;
+}
+.change_time_menu {
+	width: 148px; /* Ширина слоя */
+	 /* Высота слоя */
+	background: #CCCCFF; /* Цвет фона */
+	float: left;
+	margin: 0px 1px;
+	padding: 0px;
+}
+.change_time_menu a {
+	display: block; /* Ссылка как блочный элемент */
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center; /* Выравнивание по центру */
+	height: 100%; /* Высота на весь слой */
+	color: #000033; /* Цвет ссылки */
+
+}
+/*Блок стилей для панели разработки идей*/
+#work {
+	display: table-cell;
+	background-color: white;
+}

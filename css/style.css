@@ -12,25 +12,36 @@ h1 {
 }
 
 section {
-	display: table;
+	display: block;
 	width: 100%;
 	min-height: 100vh;
 }
 
 /*Блок стилей для панели создания задач*/
 #create_menu {
-	display: table-cell;
-	background-color: #CCCCFF;
-	color: #000033;
-	width: 200px;
+    display: block;
+    color: #FFFFFF;
+    margin: 0 25% 0 25%;
+    min-width: 460px;
+    height: 30px;
+}
+.create_task_menu {
+    display: inline-block;
+    background-color: #03A9F4;
+    margin: 5px 0px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 3px;
 }
 /*Блок стилей для основной панели*/
 #main {
-	display: table-cell;
-	background-color: white;
-	width: 600px;
-	border-left: 2px dotted #000033;
-	border-right: 2px dotted #000033;
+    display: block;
+    background-color: white;
+    width: 600px;
+    border-left: 2px dotted #000033;
+    border-right: 2px dotted #000033;
+    float: left;
+    min-height: 90vh;
 }
 #interval_of_time {
 	width: 600px;
@@ -54,8 +65,23 @@ section {
 	color: #000033; /* Цвет ссылки */
 
 }
+#day_plan {
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-top: 1px solid #CECECE;
+	width: 600px;
+    webkit-overflow-scrolling: touch;
+    webkit-tap-highlight-color: transparent;
+}
+#day_plan div {
+	box-sizing: content-box;
+    moz-box-sizing: content-box;
+    webkit-box-sizing: content-box;
+}
 /*Блок стилей для панели разработки идей*/
 #work {
-	display: table-cell;
-	background-color: white;
+	display: block;
+    background-color: rgba(54, 255, 0, 0.5);
+    float: left;
+    min-height: 90vh;
 }
